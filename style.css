@@ -1,0 +1,275 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: rgba(242, 242, 242, .6);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: #31b0d5;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  font-weight: 200;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+  height: 100vh; /*height to 100% of view height*/
+  background: #31b0d5; /*background color to blue*/
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.jumbotron-text h1 {
+  /*YOUR NAME*/
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.jumbotron-text p {
+  margin: 0;
+}
+
+/*SOCIAL LINKS*/
+.ul-social {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-social-links {
+  display: inline-block;
+  list-style: none;
+}
+
+.social {
+  font-size: 2em;
+  color: white;
+  padding: 20px;
+}
+
+/*ARROW LINK*/
+#down-arrow {
+  /*position: absolute;
+  width: 100%;*/
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#down-arrow a {
+  color: white;
+}
+
+/*CONTENT*/
+.container {
+  /*sets up flexbox*/
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.white {
+  background: white;
+}
+
+.side-content {
+  flex: 0 0 16.6%;
+}
+
+.main-content {
+  flex: 0 0 66.6%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.side-content-sm {
+  flex: 0 0 10%;
+}
+
+.main-content-lg {
+  flex: 0 0 80%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: #31b0d5;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-body {
+  line-height: 1.5;
+  color: rgba(0,0,0,.75);
+}
+
+/*EDUCATION*/
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,.075);
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.card-content {
+  padding: .25rem 1.25rem;
+  flex: 1 1 auto;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 400;
+  color: grey;
+}
+
+.job-title {
+  float: right;
+}
+
+/*PROJECTS*/
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.project-image {
+  flex: 1 0 auto;
+}
+
+.project-image img {
+  display: block;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.project-content {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*SKILLS*/
+.ul-skills {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-skills {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  color: white;
+  background: #31b0d5;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+}
+
+/*CONTACT*/
+.blue {
+  background: #3498db;
+  text-align: center;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  background: #1d6fa5;
+  color: #fff;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact button {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: #3498db;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+.white-text {
+  color: white;
+}
