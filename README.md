@@ -77,7 +77,7 @@ There are 8 customizable sections:
             </ul>
 ```
 ---
-**Contact** - Simply cahnge the `address` to include your email address
+**Contact** - Simply change the `address` to include your email address
 ```
 <form method="POST" action="https://formspree.io/email@email.com">
 ```
