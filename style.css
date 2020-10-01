@@ -1,11 +1,11 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  background: rgba(242, 242, 242, .6);
+  font-family: "Raleway", sans-serif;
+  background: rgba(242, 242, 242, 0.6);
   margin: 0;
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 /*NAVBAR*/
@@ -23,6 +23,11 @@ body {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .anchor {
@@ -30,6 +35,12 @@ body {
   position: relative;
   top: -70px;
   visibility: hidden;
+  font-weight: bold;
+}
+
+.content-header h2 {
+  font-weight: bold;
+  border-bottom: 1px solid #0080ff;
 }
 
 /*JUMBOTRON*/
@@ -56,11 +67,12 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3em;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .jumbotron-text p {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 /*SOCIAL LINKS*/
@@ -129,9 +141,9 @@ body {
 }
 
 .box-shadow {
-  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 h2 {
@@ -144,7 +156,7 @@ h2 {
 
 .content-body {
   line-height: 1.5;
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 /*EDUCATION*/
@@ -152,28 +164,29 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
   margin-bottom: 30px;
 }
 
 .card-header {
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   background-color: white;
-  border-bottom: 1px solid rgba(0,0,0,.075);
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .card-content {
-  padding: .25rem 1.25rem;
+  padding: 0.25rem 1.25rem;
   flex: 1 1 auto;
 }
 
 h4 {
+  font-weight: bold;
+  color: #000;
   margin: 0;
-  font-weight: 400;
-  color: grey;
+  text-transform: uppercase;
 }
 
 .job-title {
@@ -185,10 +198,10 @@ h4 {
   display: flex;
   flex-direction: row;
   background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   margin-bottom: 30px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
@@ -216,6 +229,12 @@ h4 {
   padding-left: 0;
 }
 
+.project-card a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
 .li-skills {
   display: inline-block;
   margin: 7px;
@@ -223,8 +242,14 @@ h4 {
   color: white;
   background: #31b0d5;
   list-style: none;
-  cursor: default;
+  cursor: pointer;
   font-size: 1.2em;
+  transition: all 0.3s;
+}
+
+.li-skills:hover {
+  background-color: #0080ff;
+  transform: translateY(-5px);
 }
 
 /*CONTACT*/
@@ -238,17 +263,19 @@ h4 {
   margin: 0 auto;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   display: block;
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: none;
+  outline: none;
   margin-bottom: 10px;
   background: #1d6fa5;
   color: #fff;
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .contact textarea {
@@ -265,11 +292,14 @@ h4 {
   border: none;
   color: #3498db;
   font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .white-text {
   color: white;
+}
+::placeholder {
+  color: #eee;
 }
