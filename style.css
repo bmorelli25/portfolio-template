@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background: rgba(242, 242, 242, .6);
@@ -5,7 +9,8 @@ body {
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+  /* outline: .1px solid red; */
 }
 
 /*NAVBAR*/
@@ -19,6 +24,7 @@ body {
 }
 
 .navbar a {
+  text-transform: uppercase;
   font-weight: 200;
   color: white;
   padding: 14px 16px;
@@ -72,6 +78,10 @@ body {
 .li-social-links {
   display: inline-block;
   list-style: none;
+  transition: transform 300ms ease-in-out;
+}
+.li-social-links:hover{
+  transform: scale(1.2);
 }
 
 .social {
@@ -80,6 +90,7 @@ body {
   padding: 20px;
 }
 
+
 /*ARROW LINK*/
 #down-arrow {
   /*position: absolute;
@@ -87,6 +98,18 @@ body {
   margin-top: auto;
   text-align: center;
   margin-bottom: 50px;
+}
+
+#down-arrow span i{
+  animation: bob 1s ease-in-out infinite;
+}
+@keyframes bob{
+  0%, 100%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
 }
 
 #down-arrow a {
@@ -155,6 +178,7 @@ h2 {
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
   margin-bottom: 30px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -182,6 +206,7 @@ h4 {
 
 /*PROJECTS*/
 .project-card {
+  height: 300px;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -208,6 +233,13 @@ h4 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.project-card a{
+  text-decoration: none;
+  background-color: #31b0d5;
+  width: fit-content;
+  padding: 5px 15px;
+  color: white;
 }
 
 /*SKILLS*/
@@ -249,6 +281,10 @@ h4 {
   color: #fff;
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
+}
+.contact input::placeholder, .contact textarea::placeholder{
+  color: white;
+  font-family: sans-serif;
 }
 
 .contact textarea {
