@@ -18,9 +18,14 @@ body {
   justify-content: center;
 }
 
+ul li{
+  display: inline; 
+  list-style-type: none;
+}
+
 .navbar a {
   font-weight: 200;
-  color: white;
+  color: #fff;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -30,6 +35,73 @@ body {
   position: relative;
   top: -70px;
   visibility: hidden;
+}
+
+#check{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+img{
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 850px){
+  .navbar a{
+    font-size: larger;
+  }
+}
+
+@media (max-width:700px) {
+  .navbar{
+    justify-content: left;
+  }
+
+  .menu{
+    display: block;
+    line-height: 80px;
+    margin-left: 20px;
+  }
+
+  .navbar ul{
+      background-color: #ffffff;
+      width: 100%;
+      text-align: center;
+      top: 50px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: -150%;
+      transition: .5s;
+  }
+
+.navbar ul li{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar ul li a{
+  color: #31b0d5;
+  transition: .5s;
+}
+
+.navbar ul li a:hover{
+  color: #1d6fa5;
+}
+
+.navbar ul li a:active{
+  color: #a518a5;
+}
+
+#check:checked ~ul{
+  left: 0;
+}
+
 }
 
 /*JUMBOTRON*/
