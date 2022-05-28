@@ -90,8 +90,7 @@ There are 8 customizable sections:
 ```
 ---
 
-##### To do
-- [ ] Make responsive
+##### To do 
 - [ ] Smooth Scrolling
 - [ ] Other effects?
 
