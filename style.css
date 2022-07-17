@@ -30,6 +30,11 @@ ul li{
   text-decoration: none;
 }
 
+div.navbar ul li a:hover{
+  opacity: 0.5;
+  transition: .5s;
+}
+
 .anchor {
   display: block;
   position: relative;
