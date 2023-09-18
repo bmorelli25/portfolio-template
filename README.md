@@ -92,7 +92,6 @@ There are 8 customizable sections:
 
 ##### To do
 - [ ] Make responsive
-- [ ] Smooth Scrolling
 - [ ] Other effects?
 
 
