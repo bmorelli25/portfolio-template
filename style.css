@@ -16,6 +16,8 @@ body {
   width: 100%; /* Full width */
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .navbar a {
@@ -272,4 +274,41 @@ h4 {
 
 .white-text {
   color: white;
+}
+
+/* Responsive Mobile (480-720px) */
+@media screen and (max-width: 720px) {
+
+  .navbar a {
+    padding: 5px 5px;
+    font-size: medium;
+  }
+
+  .jumbotron-text {
+    font-size: 1.5em;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card .project-content h4 {
+    order: 1;
+    text-align: center; 
+  }
+
+  .project-card .project-image {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .project-card .project-content p {
+    order: 10;
+  }
+
+  .project-card .project-content a {
+    order: 5;
+    text-align: center; 
+  }
 }
