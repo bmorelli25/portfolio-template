@@ -2,6 +2,8 @@ body {
   font-family: 'Raleway', sans-serif;
   background: rgba(242, 242, 242, .6);
   margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 * {
@@ -279,9 +281,16 @@ h4 {
 /* Responsive Mobile (480-720px) */
 @media screen and (max-width: 720px) {
 
+  .jumbotron .jumbotron-text {
+    margin-block: auto;
+  }
+
+  h1 {
+    margin-top: auto;
+  }
+
   .navbar a {
     padding: 5px 5px;
-    font-size: medium;
   }
 
   .jumbotron-text {
